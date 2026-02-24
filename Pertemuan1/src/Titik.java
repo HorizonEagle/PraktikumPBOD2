@@ -9,12 +9,14 @@ public class Titik {
 /**********Atribut***********/
     double Absis;
     double Ordinat;
+    static int Counter;
 
 /**********Method***********/
     //Konstruktor membuat Titik (0,0)
     Titik(){
         Absis = 0;
         Ordinat = 0;
+        Counter++;
     }
 
     //Selector mengembalikan nilai absis//
@@ -42,7 +44,10 @@ public class Titik {
         Absis += x;
         Ordinat += y;
     }
-
+    //Mengembalikan banyaknya titik yang telah dibuat
+    int NTitik(){
+        return Counter;
+    }
     void printTitik(){
         System.out.println("Titik (" + Absis + "," + Ordinat + ")");
     }
