@@ -38,7 +38,8 @@ public class MTitik {
 
         //mengembalikan posisi kuadran
         System.out.println(T1.getKuadran());
-
+        T1.refleksiX();
+        T2.refleksiY();
         //menghitung jarak terhadap titik lainnya
         System.out.println(T1.getJarak(T2));
 
