@@ -1,4 +1,4 @@
-public class Garis {
+public class Garis{
 
     //********Atribut***********/
 

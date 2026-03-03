@@ -42,6 +42,8 @@ public class MTitik {
         //menghitung jarak terhadap titik lainnya
         System.out.println(T1.getJarak(T2));
 
+        T1.refleksiX();
+        T2.refleksiY();
         //membuat titik baru yang merefleksikan terhadap sumbu X
         T1.getRefleksiX(T3);
         //membuat titik baru yang merefleksikan terhadap sumbu Y
