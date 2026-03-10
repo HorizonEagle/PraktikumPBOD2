@@ -3,7 +3,15 @@ private int jmlsisi;
 private String warna;
 private String border;
 
-public BangunDatar () {}
+public BangunDatar(){}
+
+public BangunDatar (int jmlsisi,String warna,String border) {
+    this.jmlsisi = jmlsisi;
+    this.warna = warna;
+    this.border = border;
+}
+
+
 
 public int getJmlSisi () {
         return jmlsisi;
