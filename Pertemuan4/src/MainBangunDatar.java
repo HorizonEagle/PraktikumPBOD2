@@ -2,11 +2,11 @@ public class MainBangunDatar {
     
     public static void main(String[] args) {
         Persegi kotak = new Persegi();
-        Persegi K = new Persegi(4,"Biru","Merah");
+        Persegi K = new Persegi(4,"Biru","yes");
         Lingkaran L = new Lingkaran();
 
         L.setJari(77);
-
+        L.printInfo();
        kotak.setSisi(16);
         kotak.setWarna("Kuning");
         kotak.printInfo();
@@ -27,5 +27,5 @@ public class MainBangunDatar {
         BangunDatar.printCounterBangunDatar();
 
 
-            }
+        }
 }
