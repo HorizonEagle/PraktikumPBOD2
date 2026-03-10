@@ -2,13 +2,18 @@ public class BangunDatar {
 private int jmlsisi;
 private String warna;
 private String border;
+private static int counterBangunDatar=0;
 
-public BangunDatar(){}
+public BangunDatar(){
+        counterBangunDatar++;
+}
 
 public BangunDatar (int jmlsisi,String warna,String border) {
     this.jmlsisi = jmlsisi;
     this.warna = warna;
     this.border = border;
+    counterBangunDatar++;
+
 }
 
 
@@ -35,9 +40,13 @@ this.border = border;
 }
 
 public void printInfo () {
-System. out.println ("Jumlah sisi: " + jmlsisi) ;
-System. out.println ("Warna: " + warna) ;
-System. out.println ("Border: " + border) ;
+    System. out.println ("Jumlah sisi: " + jmlsisi) ;
+    System. out.println ("Warna: " + warna) ;
+    System. out.println ("Border: " + border) ;
+}
+
+public static void printCounterBangunDatar(){
+    System.out.println("Jumlah Objek Bangun Datar = "+counterBangunDatar);
 }
 
 }
