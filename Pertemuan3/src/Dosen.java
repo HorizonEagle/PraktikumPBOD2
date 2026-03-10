@@ -19,7 +19,7 @@ public class Dosen {
     }
 
 
-
+    //Selector
     String getNip(){
         return this.nip;
     }
@@ -33,6 +33,19 @@ public class Dosen {
     }
 
     
+    //Mutator
+    void setNIP(String nip){
+        this.nip = nip;
+    }
+
+    void setNama(String Nama){
+        this.Nama = Nama;
+    }
+
+    void setProdi(String Prodi){
+        this.Prodi = Prodi;
+    }
+    //Method
     void infoDosen(){
         System.out.println("Nip = " + nip);
         System.out.println("Nama Dosen = " + Nama);

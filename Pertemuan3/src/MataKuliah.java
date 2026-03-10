@@ -45,4 +45,9 @@ public class MataKuliah {
     void setSks(int SKS){
         this.sks = SKS;
     }
+
+    //Method
+    int JumlahMatkul(){
+        return counter;
+    }
 }

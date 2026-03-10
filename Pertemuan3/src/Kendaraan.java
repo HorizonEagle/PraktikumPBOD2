@@ -15,4 +15,22 @@ public class Kendaraan {
         this.noPlat = noPlat;
         this.Jenis = Jenis;
     }
+
+    //Selector
+    String getNoPlat(){
+        return noPlat;
+    }
+
+    String getJenis(){
+        return Jenis;
+    }
+
+    //Mutator
+    void setnoPlat(String noP){
+        this.noPlat = noP;
+    }
+
+    void setJenis(String Jenis){
+        this.Jenis = Jenis;
+    }
 }
