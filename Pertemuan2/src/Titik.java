@@ -12,54 +12,54 @@ public class Titik {
 
     //********Method**********/
     //Konstruktor
-    Titik(){
+    public Titik(){
     absis = 0;
     ordinat = 0;
     Counter++;
     }
 
-    Titik(double a,double b){
+    public Titik(double a,double b){
         this.absis = a;
         this.ordinat = b;
     }
 
      //Selector mengembalikan nilai absis//
-    double getAbsis(){
+    public double getAbsis(){
         return absis;
     }
 
     //selector mengembalikan nilai ordinat
-    double getOrdinat(){
+    public double getOrdinat(){
         return ordinat;
     }
     //Mengubah nilai Absis dengan nilai baru x
-    void setAbsis(double x){
+    public void setAbsis(double x){
         absis = x;
     }
 
     //Mengubah nilai ordinat dengan nilai baru y
-    void setOrdinat(double y){
+    public void setOrdinat(double y){
         ordinat = y;
     }
 
     //Menggeser nilai Absis dan Ordinat sesuai nilai x dan y
-    void geser(double x,double y){
+    public void geser(double x,double y){
         absis += x;
         ordinat += y;
     }
 
     //Menunjukkan koordinat Titik
-    void printTitik(){
+    public void printTitik(){
         System.out.println("Titik (" + absis + "," + ordinat + ")");
     }
 
     //Mengembalikan jumlah Titik yang telah dibuat
-    int CounterTitik(){
+    public int CounterTitik(){
         return Titik.Counter;
     }
     
     //mengembalikan posisi Kuadran, Kudaran 0 jika tidak terdefinisi
-    int getKuadran(){
+    public int getKuadran(){
         int K = 0;
         if(absis > 0 && ordinat > 0)
         {
@@ -85,27 +85,27 @@ public class Titik {
     }
 
     //mengembalikan Nilai jarak titik ke pusat origin (0,0)
-    double getJarakPusat(){
+    public double getJarakPusat(){
         return Math.sqrt(Math.pow((absis-0),2) + Math.pow((ordinat-0), 2));
     }
     
     //mengembalikan nilai jarak Titik T1 ke T2
-    double getJarak(Titik T2){
+    public double getJarak(Titik T2){
         return Math.sqrt(Math.pow((absis-T2.absis),2) + Math.pow((ordinat-T2.ordinat), 2));
 
     }
 
     //merefleksikan terhadap sumbu X
-    void refleksiX(){
+   public  void refleksiX(){
         ordinat = ordinat * -1;
     }
     //merefleksikan terhadap sumbu Y
-    void refleksiY(){
+   public  void refleksiY(){
         absis = absis * -1;
     }
 
     //membuat Titik baru dengan nilai refleksiX dari titik awal
-    Titik getRefleksiX(Titik A){
+    public Titik getRefleksiX(Titik A){
         A.absis = this.absis;
         A.ordinat = this.ordinat * -1;
         return A;
@@ -113,9 +113,11 @@ public class Titik {
 
     //membuat Titik baru dengan nilai refleksiY dari titik awal
 
-    Titik getRefleksiY(Titik A){
+    public Titik getRefleksiY(Titik A){
         A.absis = this.absis * -1;
         A.ordinat = this.ordinat;
         return A;
     }
+
+    
 }
