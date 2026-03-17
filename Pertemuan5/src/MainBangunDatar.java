@@ -37,9 +37,12 @@ public class MainBangunDatar {
 
         BangunDatar.printCounterBangunDatar();
 
-        P2.zoomIn();
-        P2.printInfo();
 
+        
+        P2.printInfo();
+        System.out.println( "Luas P2 = " +      P2.getLuas());
+        P2.zoomIn();
+        System.out.println( "Luas P2 = " +      P2.getLuas());
         System.out.println("Luas LL1 :"+LL1.getLuas());
         LL1.zoom(300);
         System.out.println("Luas LL1 :"+LL1.getLuas());
@@ -47,8 +50,12 @@ public class MainBangunDatar {
         // L1.zoomOut();
         System.out.println("Luas L1 :"+L1.getLuas());
         
+        
         P1.printInfo();
         P2.printInfo();
+        System.out.println("Luas LL1 :"+LL1.getLuas());
+        LL1.zoomOut();
+        System.out.println("Luas LL1 :"+LL1.getLuas());
         
         }
 }
