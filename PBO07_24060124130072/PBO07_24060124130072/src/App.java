@@ -153,5 +153,13 @@ public class App {
        Mahasiswa Erlang = new Mahasiswa(Denis);
 
        Erlang.info();
+
+
+
+
+       /*Renungan : Menurut saya cara kerja polimorp adalah mengubah parameter 
+       atau keluaran dari fungsi/prosedur dari sebuah fungsi yang sudah ada. Polimorp juga 
+       bisa digunakan untuk mengubah jenis data type dari suatu variable
+       */
     }
 }
