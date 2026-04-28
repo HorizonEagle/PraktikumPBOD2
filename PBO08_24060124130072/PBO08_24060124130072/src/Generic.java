@@ -1,3 +1,8 @@
+/*
+NIM     : 24060124130072
+Nama    : Ali Maskan Ferry Purwanto
+Tanggal : Selasa/28-04-2026
+*/
 
 abstract class Anabul {
     /*Atribut */
@@ -119,11 +124,11 @@ class Datum <idk> {
 class OperatorGenerik <T>{
     //Method
     public static <T> void Tukar(T a,T b){
-        System.out.println("Sebelum ditukar, : "+a+" dan : "+ b);
+        System.out.println("Sebelum ditukar,a : "+a+" dan b : "+ b);
         T tmp = a;
         a = b;
         b = tmp;
-        System.out.println("Setelah ditukar, : "+a+" dan : "+ b);
+        System.out.println("Setelah ditukar,a : "+a+" dan b : "+ b);
 
     }
     public static <T> void Tukar(T[] A, T[] B){
