@@ -142,6 +142,36 @@ class OperatorGenerik <T>{
         return a.getBobot() + b.getBobot();
     }
 }
+
+class Data <T>{
+    /*ATRIBUT */
+    private static Object[] ruang = new Object[100];
+    private int banyak;
+
+    //konsturktor
+    Data(){
+        this.banyak = 0;
+    }
+    //method
+    @SuppressWarnings("unchecked")
+    public T getIsi(int index){
+        return (T) ruang[index];
+    }
+
+    public void setIsi(int index,T objek){
+        if(index > 0 && index <=100){
+            banyak++;
+        ruang[index] = objek;
+        }else{
+            throw new IllegalArgumentException("Parameter harus diantara 1-100");
+        }
+        
+    }
+
+    public int getSize(){
+        return banyak;
+    }
+}
 public class Generic {
     public static void main(String[] args) throws Exception {
         // I) Generic pada Class
@@ -181,5 +211,15 @@ public class Generic {
         //3.c
         System.out.println("Bobot K1 dan K2 : "+OP1.Bobot2(K1, K2));
 
+
+        //4.a
+        Data <Anabul> Data1 = new Data();
+        Data1.setIsi(1, B3);
+
+        //4.b
+        System.out.println("Data index ke 1 : "+Data1.getIsi(1));
+
+        //4.c
+        System.out.println("Banyak Data1 ada "+Data1.getSize()+" buah");
     }
 }
