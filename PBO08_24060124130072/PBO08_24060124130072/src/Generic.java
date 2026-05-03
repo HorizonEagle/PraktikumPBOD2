@@ -221,5 +221,7 @@ public class Generic {
 
         //4.c
         System.out.println("Banyak Data1 ada "+Data1.getSize()+" buah");
+
+        //Renungan : Cara kerja Konsep generik adalah membuat sebuah fungsi atau atribut memiliki tipe data generik/bebas sehingga sebuah fungsi bisa digunakan untuk berbagai macam data
     }
 }
