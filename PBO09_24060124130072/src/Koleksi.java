@@ -256,6 +256,7 @@ public class Koleksi {
         T1.addNama("Opan");
         T1.addNama("Hanif");
         T1.addNama("Gahftan");
+        
         T1.addNama("Novelya");
 
         
