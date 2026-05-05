@@ -214,12 +214,15 @@ public class Generic {
 
         //4.a
         Data <Anabul> Data1 = new Data();
+        //4.b
         Data1.setIsi(1, B3);
 
-        //4.b
+        //4.c
         System.out.println("Data index ke 1 : "+Data1.getIsi(1));
 
-        //4.c
+        //4.d
         System.out.println("Banyak Data1 ada "+Data1.getSize()+" buah");
+
+        //Renungan :Cara kerja dari Konsep generik ialah mengganti data type primitif menjeadi data type generik agar fungsi / atribut nya bisa menggunakan data type apa saja
     }
 }
