@@ -8,8 +8,8 @@ public class MySQLPersonDAO implements PersonDAO{
         String name = person.getName();
 
         //Membuat Koneksi,nama db,password menyesuaikan
-        Class.forName("com.mysql.jdbc.Driver");
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost/TugasPBO","root","01100010");
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost/pbo","root","01100010");
 
         //Kerjakan mysql query
         String query = "INSERT INTO person(name) VALUES('"+name+"')";
