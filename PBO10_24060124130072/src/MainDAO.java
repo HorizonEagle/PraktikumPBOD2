@@ -10,6 +10,7 @@ public class MainDAO {
         DAOManager m = new DAOManager();
         m.setPersonDAO(new MySQLPersonDAO());
 
+        
         try {
             m.getPersonDAO().savePerson(person);
         } catch (Exception e) {
