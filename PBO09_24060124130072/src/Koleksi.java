@@ -342,7 +342,5 @@ public class Koleksi {
         //4.f
         P.showJenisAnabul();
 
-        //Renungan : Koleksi Bekerja dengan cara membuat sebuah array yang berisi objek2 dengan syarat memiliki induk objek yg sama
-
     }
 }
