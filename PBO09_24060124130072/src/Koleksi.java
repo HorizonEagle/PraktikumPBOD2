@@ -231,6 +231,35 @@ class Piaraan{
         return Lanabul.contains(anabul);
     }   
 
+    public int countKucing(){
+        int jum = 0;
+
+        for(Anabul i : Lanabul){
+            if( i instanceof Kucing){
+                jum++;
+            }
+        }
+        return jum;
+    }
+
+    public double bobotKucing(){
+        double jum = 0;
+
+        for(Anabul i : Lanabul){
+            if( i instanceof Kucing){
+                Kucing k = (Kucing) i;
+                jum += k.getBobot();
+            }
+        }
+        return jum;
+    }
+
+    public void showJenisAnabul(){
+        for(Anabul i : Lanabul){
+            System.out.println("Nama : "+i.getNama()+"\tClass : "+i.getClass());
+        }
+    }
+
 }
 public class Koleksi {
     public static void main(String[] args) throws Exception {
@@ -289,20 +318,31 @@ public class Koleksi {
         Piaraan P = new Piaraan();
         Anggora K3 = new Anggora("Budi", 8.2);
 
-
-        System.out.println("Jumlah piaraan : "+P.getNbelm());
+        //2 b
         P.enqueueAnabul(B1);
         P.enqueueAnabul(K1);
         P.enqueueAnabul(K2);
         P.enqueueAnabul(K3);
         P.enqueueAnabul(A1);
+        System.out.println("Jumlah piaraan : "+P.getNbelm());
+        System.out.println("Anabul awal sebelum dequeue : "+P.getAnabul());
 
-        P.showAnabul();
-        
         P.dequeueAnabul();
+        System.out.println("Anabul awal setelah dequeue : "+P.getAnabul());
+       
+        //4.c
         P.showAnabul();
 
-        System.out.println("Anabul awal : "+P.getAnabul());
+        //4.d
+        System.out.println("Kucing ada :" + P.countKucing());
+
+        //4.e
+        System.out.println("Bobot semua kucing ada : "+P.bobotKucing()+" Kg");
+
+        //4.f
+        P.showJenisAnabul();
+
+        //Renungan : Koleksi Bekerja dengan cara membuat sebuah array yang berisi objek2 dengan syarat memiliki induk objek yg sama
 
     }
 }
